@@ -5,17 +5,19 @@
 <style>
 	body{
 		margin: 0px;
-}
+		background: #FFF9F5;
+	}
 
 	div.buttons:hover {
 		background: #404040;
 		bottom: 0px;
-}
+	}
 
 	div.buttons img {
 		height: 25px;
 		width: auto;
-}
+	}
+
 	div.buttons {
 		width: 100%;
 		position: fixed;
@@ -24,30 +26,51 @@
 		text-align: center;
 		padding-top: 5px;
 		transition: background 3s, bottom 1s;
-}
+	}
 
 	div.buttons a {
 		display: inline-block;
 		margin: 0 5px 0 5px;
-}
+	}
+
 	div.header {
-		/*blog name
-		border-top: 5px solid black;
-		border-bottom: 5px solid black;*/
-		padding: 30px;
+		/*blog name*/
 		text-align: center;
 		font-size: 64px;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 100;
 		color: #FFF9F5;
-		
-}
-	div.header {
 		/*menu*/
 		background: #404040;
-		min-height: 292px;
+	}
 
-}
+	div.blogname {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		border-top: 1px solid #FFF9F5;
+		border-bottom: 1px solid #FFF9F5;
+		display: inline-block;
+		line-height: 75%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		user-select: none;
+	}
+
+	div.menu {
+		font-size: 36px;
+		font-weight: 200;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.item {
+		padding-bottom: 9px;
+	}
+	.item:hover {
+		color: #FF7474;
+		cursor: pointer;
+		user-select: none;
+	}
 </style>
 </head>
 
@@ -58,8 +81,29 @@
 		<a target="_blank" href="https://twitter.com/playpurplepiano"><img src="http://icon-icons.com/icons2/642/PNG/512/twitter_2_icon-icons.com_59206.png"></a>
 		<a target="_blank" href="https://www.instagram.com/playpurplepiano/"><img src="https://cdn0.iconfinder.com/data/icons/social-media-circle-6/1024/instagram-512.png"></a>
 	</div>
+
 	<div class="header">
-		READ UP
+		<div class='blogname'> 
+			READ UP
+		</div>
+
+		<div class='menu'>
+			<div class='feminism item'>
+				feminism
+			</div>
+
+			<div class='science item'>
+				science
+			</div>
+
+			<div class='memes item'>
+				memes
+			</div>
+
+			<div class='personal item'>
+				personal
+			</div>
+		</div>
 	</div>
 </body>
 
