@@ -8,32 +8,32 @@
 		background: #FFF9F5;
 	}
 
-	div.buttons:hover {
+	.footer:hover {
 		background: #404040;
 		bottom: 0px;
 	}
 
-	div.buttons img {
-		height: 25px;
+	.footer img {
+		height: 35px;
 		width: auto;
 	}
 
-	div.buttons {
+	.footer {
 		width: 100%;
 		position: fixed;
-		bottom: -30px;
+		bottom: -40px;
 		background: rgba(0, 0, 0, 0.2);
 		text-align: center;
-		padding-top: 5px;
-		transition: background 3s, bottom 1s;
+		padding-top: 10px;
+		transition: background 2s, bottom 1s;
 	}
 
-	div.buttons a {
+	.footer a {
 		display: inline-block;
 		margin: 0 5px 0 5px;
 	}
 
-	div.header {
+	.header {
 		/*blog name*/
 		text-align: center;
 		font-size: 64px;
@@ -44,8 +44,8 @@
 		background: #404040;
 	}
 
-	div.blogname {
-		margin-top: 50px;
+	.blogname {
+		margin-top: 100px;
 		margin-bottom: 100px;
 		border-top: 1px solid #FFF9F5;
 		border-bottom: 1px solid #FFF9F5;
@@ -54,9 +54,10 @@
 		padding-top: 5px;
 		padding-bottom: 5px;
 		user-select: none;
+		cursor: default;
 	}
 
-	div.menu {
+	.menu {
 		font-size: 36px;
 		font-weight: 200;
 		display: flex;
@@ -71,40 +72,99 @@
 		cursor: pointer;
 		user-select: none;
 	}
+	.button {
+		cursor: pointer;
+		user-select: none;
+		color: #FFF9F5;
+		font-size: 24px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+		line-height: 70%;
+		border: 1px solid #FFF9F5;
+		border-radius: 20px;
+		padding: 6px 22px 10px 22px;
+		display: inline-block;
+		position: absolute;
+		top: 40px;
+		right: 50px;
+	}
+	.post {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		font-weight: 300;
+		margin: 60px;
+		cursor: default;
+	}
+	.post-header {
+		font-size: 24px;
+		font-weight: 400;
+		color: #404040;
+		padding-bottom: 10px;
+	}
+	.italic {
+		font-style: italic;
+	}
+	.bold {
+		font-size: 18px;
+		font-weight: 400;
+	}
 </style>
 </head>
 
 <body>
-
-	<div class="buttons">
+	<div class="footer">
 		<a target="_blank" href="https://vk.com/playpurplepiano"><img src="http://geological.narod.ru/FON/002vk.gif"></a>
 		<a target="_blank" href="https://twitter.com/playpurplepiano"><img src="http://icon-icons.com/icons2/642/PNG/512/twitter_2_icon-icons.com_59206.png"></a>
 		<a target="_blank" href="https://www.instagram.com/playpurplepiano/"><img src="https://cdn0.iconfinder.com/data/icons/social-media-circle-6/1024/instagram-512.png"></a>
 	</div>
 
 	<div class="header">
+		<div class="button">
+			post
+		</div>
 		<div class='blogname'> 
 			READ UP
 		</div>
 
 		<div class='menu'>
-			<div class='feminism item'>
+			<div class='feminism item' onclick="">
 				feminism
 			</div>
-
-			<div class='science item'>
+			<div class='science item' onclick="document.getElementsByClassName('feminism post')[0].style.display='none';">
 				science
 			</div>
-
 			<div class='memes item'>
 				memes
 			</div>
-
 			<div class='personal item'>
 				personal
 			</div>
 		</div>
 	</div>
+	<div class="feminism post">
+		<div class="post-header">
+			Культура изнасилования: путеводитель для джентельмена
+		</div>
+		<p>
+		Если ты мужчина, то ты — часть культуры изнасилования. Это звучит грубо. Ты не обязательно насильник. Однако ты сохраняешь в себе отношение и поведение, которое обычно называют «культура изнасилования». Не цепляйся за терминологию. Проблема — не в словах. Реальность, которую они описывают — вот проблема.
+		Мужчины являются основными агентами и носителями культуры изнасилования.
+		Изнасилование совершается не исключительно лишь мужчинами. И женщины в нём не единственные жертвы — мужчины насилуют мужчин, женщины насилуют мужчин — но что делает изнасилование мужской проблемой,  это факт, что мужчины совершают 99% зарегистрированных изнасилований.
+		</p>
+		<p class="italic">
+		“Культура изнасилования — это среда, в которой изнасилование превалирует и в которой сексуальное насилие над женщиной нормализировано и оправдано в СМИ и в популярной культуре. Культура изнасилования сохраняет себя через женоненавистнический язык, объектификацию женского тела и гламуризацию сексуального насилия, тем самым создавая общество, не уважающее женские права и безопасность.”
+		</p>
+		<p class="bold">
+		https://medium.com/russian/-4765d7c341c4
+		<br>
+			<span>
+				#YesAllWomen #ЯнеБоюсьСказать — чекни.
+			</span>
+		</p>
+	</div>
+	<script type="text/javascript">
+		//alert("приветики");
+		//document.getElementsByClassName('feminism post')[0].style.display='none';
+	</script>
 </body>
 
 </html>
