@@ -127,16 +127,16 @@
 		</div>
 
 		<div class='menu'>
-			<div class='feminism item' onclick="feminismMenu()">
+			<div class='feminism item' onclick="showFeminismPosts()">
 				feminism
 			</div>
-			<div class='science item' onclick="scienceMenu()">
+			<div class='science item' onclick="showSciencePosts()">
 				science
 			</div>
-			<div class='memes item'>
+			<div class='memes item' onclick="showMemesPosts()">
 				memes
 			</div>
-			<div class='personal item'>
+			<div class='personal item' onclick="showPersonalPosts()">
 				personal
 			</div>
 		</div>
@@ -225,25 +225,87 @@
 		</p>
 	</div>
 
+	<div class="feminism post">
+		<div class="post-header">
+			Культура изнасилования: путеводитель для джентельмена
+		</div>
+		<p>
+		Если ты мужчина, то ты — часть культуры изнасилования. Это звучит грубо. Ты не обязательно насильник. Однако ты сохраняешь в себе отношение и поведение, которое обычно называют «культура изнасилования». Не цепляйся за терминологию. Проблема — не в словах. Реальность, которую они описывают — вот проблема.
+		Мужчины являются основными агентами и носителями культуры изнасилования.
+		Изнасилование совершается не исключительно лишь мужчинами. И женщины в нём не единственные жертвы — мужчины насилуют мужчин, женщины насилуют мужчин — но что делает изнасилование мужской проблемой,  это факт, что мужчины совершают 99% зарегистрированных изнасилований.
+		</p>
+		<p class="italic">
+		“Культура изнасилования — это среда, в которой изнасилование превалирует и в которой сексуальное насилие над женщиной нормализировано и оправдано в СМИ и в популярной культуре. Культура изнасилования сохраняет себя через женоненавистнический язык, объектификацию женского тела и гламуризацию сексуального насилия, тем самым создавая общество, не уважающее женские права и безопасность.”
+		</p>
+		<p class="bold">
+		https://medium.com/russian/-4765d7c341c4
+		<br>
+			<span>
+				#YesAllWomen #ЯнеБоюсьСказать — чекни.
+			</span>
+		</p>
+	</div>
+
 	<script type="text/javascript">
 		//alert("приветики");
-		//document.getElementsByClassName('feminism post')[0].style.display='none';
+		
 		var posts = document.getElementsByClassName('post');
+		posts = [].slice.call(posts);
 
-		posts.forEach(
-			function(a){a.style.display='none'}
-		);
-
-		function scienceMenu()
+		function showSciencePosts()
 		{
-			document.getElementsByClassName('post')[0].style.display='none'; 
-			document.getElementsByClassName('science post')[0].style.display='block'; 
+			posts.forEach(
+				function(a){ a.style.display='none' }
+			);
+
+			var sciencePosts = document.getElementsByClassName('science post');
+			sciencePosts = [].slice.call(sciencePosts);
+
+			sciencePosts.forEach(
+				function(a){ a.style.display='block' }
+			); 
 		}
 
-		function feminismMenu()
+		function showFeminismPosts()
 		{
-			document.getElementsByClassName('post')[0].style.display='none'; 
-			document.getElementsByClassName('feminism post')[0].style.display='block'; 
+			posts.forEach(
+				function(a){ a.style.display='none' }
+			);
+
+			var feminismPosts = document.getElementsByClassName('feminism post');
+			feminismPosts = [].slice.call(feminismPosts);
+
+			feminismPosts.forEach(
+				function(a){ a.style.display='block' }
+			); 
+		}
+
+		function showMemesPosts()
+		{
+			posts.forEach(
+				function(a){ a.style.display='none' }
+			);
+			 
+			var memesPosts = document.getElementsByClassName('memes post');
+			memesPosts = [].slice.call(memesPosts);
+
+			memesPosts.forEach(
+				function(a){ a.style.display='block' }
+			); 
+		}
+
+		function showPersonalPosts()
+		{
+			posts.forEach(
+				function(a){ a.style.display='none' }
+			);
+			 
+			var personalPosts = document.getElementsByClassName('personal post');
+			personalPosts = [].slice.call(personalPosts);
+
+			personalPosts.forEach(
+				function(a){ a.style.display='block' }
+			);  
 		}
 
 	</script>
