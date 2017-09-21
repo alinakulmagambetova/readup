@@ -1,11 +1,13 @@
 <html>
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400|Raleway:100,200&amp;subset=cyrillic" rel="stylesheet">
 <style>
 	body{
 		margin: 0px;
 		background: #FFF9F5;
+		min-height: 300%;
 	}
 
 	.footer:hover {
@@ -246,66 +248,29 @@
 		</p>
 	</div>
 
-	<script type="text/javascript">
-		//alert("приветики");
-		
-		var posts = document.getElementsByClassName('post');
-		posts = [].slice.call(posts);
+	<script>
 
 		function showSciencePosts()
 		{
-			posts.forEach(
-				function(a){ a.style.display='none' }
-			);
-
-			var sciencePosts = document.getElementsByClassName('science post');
-			sciencePosts = [].slice.call(sciencePosts);
-
-			sciencePosts.forEach(
-				function(a){ a.style.display='block' }
-			); 
+			$('.post').hide();
+			$('.science.post').slideDown( 300 );
 		}
 
 		function showFeminismPosts()
 		{
-			posts.forEach(
-				function(a){ a.style.display='none' }
-			);
-
-			var feminismPosts = document.getElementsByClassName('feminism post');
-			feminismPosts = [].slice.call(feminismPosts);
-
-			feminismPosts.forEach(
-				function(a){ a.style.display='block' }
-			); 
+			$('.post').hide();
+			$('.feminism.post').slideDown( 300 );
 		}
-
 		function showMemesPosts()
 		{
-			posts.forEach(
-				function(a){ a.style.display='none' }
-			);
-			 
-			var memesPosts = document.getElementsByClassName('memes post');
-			memesPosts = [].slice.call(memesPosts);
-
-			memesPosts.forEach(
-				function(a){ a.style.display='block' }
-			); 
+			$('.post').hide();
+			$('.memes.post').slideDown( 300 );			
 		}
 
 		function showPersonalPosts()
 		{
-			posts.forEach(
-				function(a){ a.style.display='none' }
-			);
-			 
-			var personalPosts = document.getElementsByClassName('personal post');
-			personalPosts = [].slice.call(personalPosts);
-
-			personalPosts.forEach(
-				function(a){ a.style.display='block' }
-			);  
+			$('.post').hide();
+			$('.personal.post').slideDown( 300 );			
 		}
 
 	</script>
