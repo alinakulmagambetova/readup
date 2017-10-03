@@ -84,6 +84,13 @@
 		top: 40px;
 		right: 50px;
 	}
+
+	.crowdsource {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		background: #404040
+	}
+
 	.post {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 20px;
