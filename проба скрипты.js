@@ -1,48 +1,44 @@
 $(document).ready( function() 
 {
-	console.log('blah');
-
-
-	$('.feminism.item').click( showFeminismPosts );
-	$('.science.item').click( showSciencePosts );
-	$('.memes.item').click( showMemesPosts );
-	$('.personal.item').click( showPersonalPosts );
-
-	function showSciencePosts()
+	$('.menu .feminism.item').click( function() 
 	{
+		$('.post').hide();
+		$('.feminism.post').slideDown( 300 );
+
+		$('.menu .item.selected').removeClass( 'selected' );
+		$(this).addClass( 'selected' );
+	});
+
+	$('.menu .science.item').click( function()
+	{
+		//undo the click (kinda)
+		if ( true ) {}
+
 		//hides unrelated posts & shows related
 		$('.post').hide();
 		$('.science.post').slideDown( 300 );
 
 		//makes menu items stay red when clicked
 		$('.menu .item.selected').removeClass( 'selected' );
-		$('.menu .science.item').addClass( 'selected' );
-	}
+		$(this).addClass( 'selected' );
+	});
 
-	function showFeminismPosts()
-	{
-		$('.post').hide();
-		$('.feminism.post').slideDown( 300 );
-
-		$('.menu .item.selected').removeClass( 'selected' );
-		$('.menu .feminism.item').addClass( 'selected' );
-	}
-	function showMemesPosts()
+	$('.menu .memes.item').click( function ()
 	{
 		$('.post').hide();
 		$('.memes.post').slideDown( 300 );
 
 		$('.menu .item.selected').removeClass( 'selected' );
-		$('.menu .memes.item').addClass( 'selected' );	
-	}
+		$(this).addClass( 'selected' );	
+	});
 
-	function showPersonalPosts()
+	$('.menu .personal.item').click( function()
 	{
 		$('.post').hide();
 		$('.personal.post').slideDown( 300 );
 
 		$('.menu .item.selected').removeClass( 'selected' );
-		$('.menu .personal.item').addClass( 'selected' );		
-	}
+		$(this).addClass( 'selected' );		
+	});
 
 });
