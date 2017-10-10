@@ -91,6 +91,12 @@
 		background: #404040
 	}
 
+	.crowdsource:hover {
+		color: #FF7474;
+		cursor: pointer;
+		border-color: #FF7474;
+	}
+
 	.post {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 20px;
