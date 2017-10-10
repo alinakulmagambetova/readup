@@ -111,3 +111,6 @@
 		font-size: 18px;
 		font-weight: 400;
 	}
+	.item.selected {
+		color: #FF7474;
+	}
