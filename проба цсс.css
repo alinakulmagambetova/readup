@@ -4,6 +4,11 @@
 		min-height: 300%;
 	}
 
+	@font-face {
+		font-family: 'Icons';
+		src: url('fonts/fontawesome-webfont.ttf');
+	}
+
 	.footer:hover {
 		background: #404040;
 		bottom: 0px;
@@ -119,4 +124,7 @@
 	}
 	.item.selected {
 		color: #FF7474;
+	}
+	.icon {
+		font-family: 'Icons';
 	}
