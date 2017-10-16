@@ -125,6 +125,11 @@
 	.item.selected {
 		color: #FF7474;
 	}
-	.icon {
+	/*.icon {
+		font-family: 'Icons';
+	}*/
+
+	.icon:before {
+		content: '\f2b9';
 		font-family: 'Icons';
 	}
