@@ -1,0 +1,135 @@
+body{
+	margin: 0px;
+	background: #FFF9F5;
+	min-height: 300%;
+}
+
+@font-face {
+	font-family: 'Icons';
+	src: url('fonts/fontawesome-webfont.ttf');
+}
+
+.footer {
+	width: 100%;
+	position: fixed;
+	bottom: -40px;
+	background: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding-top: 10px;
+	transition: background 2s, bottom 1s;
+		
+	a {
+		display: inline-block;
+		margin: 0 5px 0 5px;
+	}
+
+	img {
+		height: 35px;
+		width: auto;
+	}
+
+	&:hover {
+		background: #404040;
+		bottom: 0px;
+	}
+
+}
+
+.header {
+	/*blog name*/
+	text-align: center;
+	font-size: 64px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	color: #FFF9F5;
+	/*menu*/
+	background: #404040;
+}
+
+.blogname {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-top: 1px solid #FFF9F5;
+	border-bottom: 1px solid #FFF9F5;
+	display: inline-block;
+	line-height: 75%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	user-select: none;
+	cursor: default;
+}
+
+.menu {
+	font-size: 36px;
+	font-weight: 200;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.item {
+	padding-bottom: 9px;
+
+	&:hover {
+		color: #FF7474;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	&.selected {
+		color: #FF7474;
+	}
+}
+
+.button {
+	cursor: pointer;
+	user-select: none;
+	color: #FFF9F5;
+	background: #404040;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 70%;
+	border: 1px solid #FFF9F5;
+	border-radius: 20px;
+	padding: 6px 22px 10px 22px;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	right: 50px;
+
+	&:hover {
+		color: #FF7474;
+		cursor: pointer;
+		border-color: #FF7474;
+	}
+}
+
+.post {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 60px;
+	cursor: default;
+
+	.post-header {
+		font-size: 24px;
+		font-weight: 400;
+		color: #404040;
+		padding-bottom: 10px;
+	}
+
+	.bold {
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+.italic {
+	font-style: italic;
+}
+
+
+.icon:before {
+	content: '\f2b9';
+	font-family: 'Icons';
+	}
