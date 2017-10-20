@@ -9,30 +9,13 @@ body{
 	src: url('fonts/fontawesome-webfont.ttf');
 }
 
-.footer {
-	width: 100%;
-	position: fixed;
-	bottom: -40px;
-	background: rgba(0, 0, 0, 0.2);
-	text-align: center;
-	padding-top: 10px;
-	transition: background 2s, bottom 1s;
-		
-	a {
-		display: inline-block;
-		margin: 0 5px 0 5px;
-	}
+a:link {
+    text-decoration: none;
+}
 
-	img {
-		height: 35px;
-		width: auto;
-	}
-
-	&:hover {
-		background: #404040;
-		bottom: 0px;
-	}
-
+a:visited {
+    color: #FFF9F5;
+    text-decoration: none
 }
 
 .header {
@@ -128,8 +111,26 @@ body{
 	font-style: italic;
 }
 
-
-.icon:before {
-	content: '\f2b9';
-	font-family: 'Icons';
+.icon {
+	&:hover {
+	  color: #FF7474;
+	  cursor: pointer;
 	}
+
+	&:before {
+		font-family: 'Icons';
+	}
+
+	&.git:before {
+		content: '\f09b';
+	}
+	&.twitter:before {
+		content: '\f099';
+	}
+	&.vk:before {
+		content: '\f189';
+	}
+	&.instagram:before {
+		content: '\f16d';
+	}
+}
